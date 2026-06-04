@@ -10,12 +10,13 @@ app = FastAPI()
 # IMPORTANT: allow React frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://upi-detector-246d.onrender.com"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 detector = UPIDetector()
 
 
