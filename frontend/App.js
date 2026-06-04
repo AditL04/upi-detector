@@ -310,7 +310,7 @@ export default function App() {
   try {
 
     const response = await fetch(
-      "https://upi-detector-backend.onrender.com/predict",
+      "http://127.0.0.1:8000/predict",
       {
         method: "POST",
         body: formData
