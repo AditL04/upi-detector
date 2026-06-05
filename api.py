@@ -11,7 +11,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://upi-detector-246d.onrender.com"
+        "*"
     ],
     allow_credentials=True,
     allow_methods=["*"],
